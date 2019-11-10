@@ -4,14 +4,14 @@ import { FaGithubAlt, FaPlus, FaSpinner } from 'react-icons/fa';
 
 import api from '../../services/api';
 import Container from '../../components/Container';
-import { Form, ButtonSubmit, List, Error } from './styles';
+import { Form, ButtonSubmit, List, Error, Input } from './styles';
 
 export default class Main extends Component {
     state = {
         newRepo: '',
         repositories: [],
         loading: false,
-        valid: false,
+        valid: true,
         errorMessage: '',
     };
 
@@ -81,7 +81,8 @@ export default class Main extends Component {
                     Repositorios
                 </h1>
                 <Form onSubmit={this.handleSubmit}>
-                    <input
+                    <Input
+                        valid={valid}
                         type="text"
                         placeholder="Adicionar Repositorio"
                         value={newRepo}
