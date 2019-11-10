@@ -76,8 +76,16 @@ export const List = styled.ul`
         }
 
         a {
+            font-size: 13px;
             text-decoration: none;
-            color: #7139c1;
+            background: #7139c1;
+            color: #fff;
+            width: 70px;
+            height: 20px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 `;

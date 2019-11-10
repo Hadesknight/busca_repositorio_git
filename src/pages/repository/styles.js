@@ -16,13 +16,16 @@ export const Owner = styled.div`
     align-items: center;
 
     a {
-        font-size: 16px;
+        font-size: 15px;
+        font-weight: bold;
         text-decoration: none;
         color: #fff;
         background: #7139c1;
-        width: 190px;
+        width: 200px;
         height: 40px;
-        padding: 11px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-radius: 30px;
         margin-bottom: 20px;
     }

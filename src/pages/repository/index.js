@@ -69,15 +69,7 @@ export default class Repository extends Component {
             // eslint-disable-next-line react/no-did-update-set-state
             this.setState({ issues: issues.data });
         }
-        this.checkPrev();
     }
-
-    checkPrev = () => {
-        const { page } = this.state;
-        if (page <= 1) {
-            this.setState({ noPrev: true });
-        }
-    };
 
     nextPage = () => {
         const { page } = this.state;
