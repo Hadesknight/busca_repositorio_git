@@ -18,7 +18,18 @@ export const Owner = styled.div`
     a {
         font-size: 16px;
         text-decoration: none;
-        color: #7139c1;
+        color: #fff;
+        background: #7139c1;
+        width: 190px;
+        height: 40px;
+        padding: 11px 15px;
+        border-radius: 30px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        width: 100%;
+        border-bottom: 1px solid #eee;
     }
 
     img {
@@ -100,4 +111,44 @@ export const IssueList = styled.ul`
             color: #999;
         }
     }
+`;
+
+export const Botoes = styled.div`
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px;
+    align-items: center;
+
+    p {
+        color: #7139c1;
+        font-weight: bold;
+    }
+`;
+
+export const PrevButton = styled.button.attrs(props => ({
+    type: 'button',
+    disabled: props.active,
+}))`
+    border: none;
+    background: #7139c1;
+    color: #fff;
+    border-radius: 14px;
+    width: 70px;
+    height: 30px;
+
+    &[disabled] {
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+`;
+
+export const NextButton = styled.button.attrs({
+    type: 'button',
+})`
+    border: none;
+    background: #7139c1;
+    color: #fff;
+    border-radius: 14px;
+    width: 70px;
+    height: 30px;
 `;
