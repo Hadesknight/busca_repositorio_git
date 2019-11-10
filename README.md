@@ -16,8 +16,8 @@
 
 
 
-<h1>
-Para executar essa aplicação, faça um clone do repositorio, e execute os comandos:</h1>
+<h3>
+Para executar essa aplicação, faça um clone do repositorio, e execute os comandos:</h3>
 
 ```js
     yarn
